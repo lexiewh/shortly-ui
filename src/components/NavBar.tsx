@@ -6,7 +6,10 @@ export default function NavBar(): ReactElement {
 	return (
 		<div className='container flex w-[100vw] items-center px-32 py-10'>
 			<div className='title-container container flex items-center'>
-				<h1 data-cy='title' className='pr-6 text-3xl font-bold text-dark-blue'>
+				<h1
+					data-testid='Title'
+					className='pr-6 text-3xl font-bold text-dark-blue'
+				>
 					Shortly
 				</h1>
 				<ul className='flex space-x-4'>

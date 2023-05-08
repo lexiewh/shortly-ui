@@ -10,6 +10,7 @@ interface ButtonProps {
 export default function Button({ text, onClick }: ButtonProps): ReactElement {
 	return (
 		<button
+			data-testid='Button'
 			type='button'
 			onClick={onClick}
 			className='rounded-3xl bg-primary-cyan hover:bg-darker-cyan hover:shadow-xl'
